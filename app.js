@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const passport = require('passport');
 const path = require('path');
 
+const users = require('./routes/api/users');
 //===============CONFIGS===================CONNECTS==============
 // Setting app to hold express server
 const app = express();
@@ -18,11 +19,10 @@ mongoose
   .then(() => console.log(`Logged into MLab URI = ${db}`))
   .catch(err => console.log('Error Mongo : ' + err));
 // ================= PASSPORT MIDDLEWARE ========================
-// app.use(passport.initialize());
+app.use(passport.initialize());
 // Passport Config - JWT strategy
-// require('./config/passport')(passport);
+require('./config/passport')(passport);
 //======================ROUTERS================================
-const users = require('./routes/api/users');
 //
 // Need middleware for router use
 app.use('/api/users', users);
@@ -36,10 +36,17 @@ app.use('/api/users', users);
 //   });
 // }
 
-// Start Ma
-app.get('/', (req, res) => {
-  res.send('Baanda Ma ');
-});
+// Start Ma - testing xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+// app.get('/', (req, res) => {                              xx
+//   res.send('Baanda Ma ');                                 xx
+// });                                                       xx
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+// Verify test
+// app.get('/verify', (req, res) => {
+//   console.log('Return from confirm click. id = ' + req.query.id);
+//   res.send('Got it');
+//   //+ req.query.id
+// });
 
 // Starting Node Server in Dev
 const port = process.env.PORT || 5000;
