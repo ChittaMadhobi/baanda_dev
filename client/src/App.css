@@ -50,6 +50,13 @@ table.a {
   margin-bottom: 5px;
 }
 
+.elephant {
+  height: 30px;
+  width: 35px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
 /*  
   LOBBY SECTION CSS
 */
@@ -133,4 +140,19 @@ div.footerspace {
 p.top-padding {
   border: none;
   padding-top: 35px;
+}
+
+/* div.fixedsize {
+  height: 300px;
+  width: 480px;
+  background-color: rgb(178, 243, 245);
+  overflow: auto;
+  max-height: 300px;
+} */
+div.fixedsize {
+  height: 400px;
+  width: 100%;
+  background-color: rgb(245, 245, 228);
+  overflow: auto;
+  max-height: 400px;
 }

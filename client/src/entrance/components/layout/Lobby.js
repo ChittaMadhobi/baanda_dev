@@ -9,6 +9,7 @@ import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 //import { Link } from 'react-router-dom';
 import Talk from '../../img/talk2.jpg';
@@ -60,9 +61,12 @@ class Lobby extends Component {
                 <p />
                 <h6 className="text-center">Intro-Chats & Library</h6>
                 <div className="btn-group btn-trigger">
-                  <a href="" className="btn btn-info btn-sm">
+                  <Link
+                    to="/baandalibrary"
+                    className="btn btn-lg btn-info btn-sm"
+                  >
                     Enter & Explore
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

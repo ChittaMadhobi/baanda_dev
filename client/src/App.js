@@ -13,6 +13,7 @@ import Lobby from './entrance/components/layout/Lobby';
 
 import Login from './entrance/components/auth/Login';
 import Register from './entrance/components/auth/Register';
+import BaandaLibrary from './librarian/components/BaandaLibrary';
 
 import './App.css';
 
@@ -47,6 +48,7 @@ class App extends Component {
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/lobby" component={Lobby} />
+              <Route exact path="/baandalibrary" component={BaandaLibrary} />
             </div>
             <Footer />
           </div>
