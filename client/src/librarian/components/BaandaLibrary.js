@@ -55,7 +55,12 @@ class BaandaLibrary extends Component {
     let baseUrl = 'https://api.api.ai/v1/';
     //let url = baseUrl + 'query?v=20170712';
     // console.log('url = ' + url);
-
+    //=========== IMPORTANT =============FIX IT WHEN YOU CAN =============
+    // IF the user is loggin in, then use their baandaid as the sessionId
+    // If unauthenticated user, use the random #
+    // ++++++++++++++++++++++ FIX IT ++++++++++++++++++++++++++++++++++++
+    let randomnumber = Math.floor(Math.random() * 9000000000) + 1000000000;
+    //let dfsesionid = randomnumber.toString();
     axios({
       method: 'post',
       url: baseUrl + 'query?v=20170712',
@@ -67,7 +72,7 @@ class BaandaLibrary extends Component {
       data: {
         query: question,
         lang: 'en',
-        sessionId: 'mysessionid'
+        sessionId: randomnumber
       }
     })
       .then(res => {
