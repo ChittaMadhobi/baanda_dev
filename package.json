@@ -2,7 +2,7 @@
   "name": "baandamvp-v0",
   "version": "1.0.0",
   "description": "Developer Connection social media",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
     "start": "node server.js",
