@@ -14,6 +14,8 @@ import Lobby from './entrance/components/layout/Lobby';
 import Login from './entrance/components/auth/Login';
 import Register from './entrance/components/auth/Register';
 import BaandaLibrary from './librarian/components/BaandaLibrary';
+import ServiceExchange from './servicexchange/components/SXEntrance';
+import HealthCare from './healthcare/components/HealthCareEntrance';
 
 import './App.css';
 
@@ -49,6 +51,8 @@ class App extends Component {
               <Route exact path="/login" component={Login} />
               <Route exact path="/lobby" component={Lobby} />
               <Route exact path="/baandalibrary" component={BaandaLibrary} />
+              <Route exact path="/servicexchange" component={ServiceExchange} />
+              <Route exact path="/healthcare" component={HealthCare} />
             </div>
             <Footer />
           </div>

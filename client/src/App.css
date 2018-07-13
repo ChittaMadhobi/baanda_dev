@@ -156,3 +156,33 @@ div.fixedsize {
   overflow: auto;
   max-height: 400px;
 }
+
+div.demofixedsize {
+  height: 400px;
+  width: 100%;
+  background-color: rgb(245, 245, 228);
+  overflow: auto;
+  max-height: 150px;
+}
+
+div.demobuttons {
+  margin-top: -10px;
+  margin-bottom: 3px;
+}
+.demorow {
+  border: none;
+  height: 500px;
+}
+
+.democolleft {
+  border: none;
+}
+
+.democolright {
+  border: 2px solid green;
+  background-color: #ddddc9;
+}
+
+.demosmallfont {
+  font-size: 15px;
+}

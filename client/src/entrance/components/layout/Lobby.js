@@ -94,9 +94,12 @@ class Lobby extends Component {
                 <p />
                 <h6 className="text-center">Co-op Service Xchange</h6>
                 <div className="btn-group btn-trigger">
-                  <a href="" className="btn btn-info btn-sm">
+                  <Link
+                    to="/servicexchange"
+                    className="btn btn-lg btn-info btn-sm"
+                  >
                     Enter & Explore
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -154,9 +157,9 @@ class Lobby extends Component {
                 <p />
                 <h6 className="text-center">Individualized HealthCare</h6>
                 <div className="btn-group btn-trigger">
-                  <a href="" className="btn btn-info btn-sm">
+                  <Link to="/healthcare" className="btn btn-lg btn-info btn-sm">
                     Enter & Explore
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
